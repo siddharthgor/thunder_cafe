@@ -9,12 +9,7 @@
     <link rel="stylesheet" href="css/thundercafe.css">
 </head>
 
-<body onsubmit="close()">
-<script>
-            function close(){
-                alert("Are You Sure");
-            }
-        </script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <h1></h1>
@@ -24,9 +19,11 @@
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
             <a href="index.php" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                 <svg class="bi me-2" width="40" height="32">
-                    <use xlink:href="#bootstrap"></use>
+                    
+                <img src="images/coffee-cup.png" width="6%" style="padding: 4px;  margin-top: -11px;" >
+                
                 </svg>
-                <span class="fs-4">Thunder Cafe</span>
+                <span class="header1">Thunder Cafe</span>
             </a>
 
             <ul class="nav nav-pills">
@@ -46,7 +43,7 @@
                 <div class="col-12 col-md-5 col-lg-6 order-md-2">
 
                     <!-- Image -->
-                    <img src="images/5d1a34dd16af4eb1093934b030957f51.avif" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" alt="..." data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/nathan-dumlao-6VhPY27jdps-unsplash.jpg" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" alt="..." data-aos="fade-up" data-aos-delay="100">
 
                 </div>
                 <div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
@@ -69,3 +66,10 @@
             </div> <!-- / .row -->
         </div> <!-- / .container -->
     </section>
+    <script>
+        function confirm(){
+            var A = "Confirm Your Order" ;
+            alert(A);
+
+        }
+    </script>

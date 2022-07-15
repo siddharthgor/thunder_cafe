@@ -55,15 +55,15 @@ include "header.php";
                             
                             <div class="carousel-item active">
                                 <img src="images/istockphoto-670957540-170667a.jpg" class="d-block w-100" alt="..."
-                                    style="height:500pt ;width:70%;">
+                                    style="height:500pt ;width:50%;">
                             </div>
                             <div class="carousel-item">
                                 <img src="images/Low-Waste-2.png" class="d-block w-100" alt="..."
-                                    style="height:500pt ;width:70%;">
+                                    style="height:500pt ;width:50%;">
                             </div>
                             <div class="carousel-item">
-                                <img src="images/5d1a34dd16af4eb1093934b030957f51.avif" class="d-block w-100" alt="..."
-                                    style="height:500pt ;width:70%;">
+                                <img src="images/910242.jpg" class="d-block w-100" alt="..."
+                                    style="height:500pt ;width:50%;">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"

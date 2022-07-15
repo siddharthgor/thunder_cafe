@@ -53,7 +53,7 @@ if (isset($_POST['submit']))
                                     <label class="cartlabel">
                                         Your Order
                                     </label>
-                                    <input type="text" class="product_id" name="product_id" placeholder="Order" onclick="name()" autocomplete="off"> 
+                                    <input type="text" class="product_id" name="product_id" placeholder="Order"  autocomplete="off"> 
                                 </div>
                             </div>
                             <div class="row">
@@ -67,7 +67,7 @@ if (isset($_POST['submit']))
                         </div>
                         <div class="rows justify-content-center">
                             <div class="col-md-6 row-cols-sm-2">
-                                <button class="btn-primary btn-block" name="submit" type="submit">Order</button>
+                                <button class="btn-primary btn-block" onclick="confirm()" name="submit" type="submit">Order</button>
                             </div>
                             <div class="col-md-6 row-cols-sm-2">
                                 <button class="btn-primary btn-block" name="view" type="button"><a href = "viewcart.php"> View </a> </button>
@@ -80,4 +80,6 @@ if (isset($_POST['submit']))
         </div>
     </section>
 
-    
+
+
+   

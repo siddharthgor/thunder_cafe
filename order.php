@@ -30,7 +30,7 @@ if (isset($_POST['submit']))
     }
 
 else {
-    session_start();
+    
 
     $_SESSION = $user_name;
         $message = "Welcome '$_SESSION'";
@@ -81,7 +81,7 @@ else {
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                                <input type="text" name="user_name" id="name" class=" form-control" id  required/>
+                                                <input type="text" name="user_name" id="name" class=" form-control" id  required autocomplete="off"/>
                                                 <label class="form-label" for="form3Example1c">Your Name</label>
                                             </div>
                                         </div>

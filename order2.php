@@ -26,7 +26,7 @@ if (isset($_POST['submit']))
     if ($result == TRUE)
     {
         echo "Order Placed ";
-         header ( "location: index.php");
+         header ( "location: totalorder.php");
 
     }
     else 
@@ -57,22 +57,22 @@ if (isset($_POST['submit']))
                 <h5 class="text-center mb-4">Thunder Cafe</h5>
                 <form class="form-card" action="" method = "Post" >
                     <div class="row justify-content-between text-left">
-                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3"> Name<span class="text-danger"> *</span></label> <input type="text" id="user_name" name="user_name" placeholder="" required onblur="validate(1)"> </div>
-                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Order<span class="text-danger"> *</span></label> <input type="text" id="lname" name="order_id" placeholder=" " onblur="validate(2)" required> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3"> Name<span class="text-danger"> *</span></label> <input type="text" id="user_name" name="user_name" placeholder="" required onblur="validate(1)" autocomplete="off"> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Order<span class="text-danger"> *</span></label> <input type="text" id="order_id" autocomplete="off" name="order_id" placeholder=" " onblur="validate(2)" required> </div>
                     </div>
                     <div class="row justify-content-between text-left">
-                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Price <span class="text-danger"> *</span></label> <input type="text" id="email" name="price" placeholder="" onblur="validate(3)" required> </div>
-                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Order Type<span class="text-danger"> *</span></label> <input type="text" id="mob" name="order_type" placeholder="" onblur="validate(4)" required> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Price <span class="text-danger"> *</span></label> <input type="text" id="price" autocomplete="off" name="pri" placeholder="" onblur="validate()" required> </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Order Type<span class="text-danger"> *</span></label> <input type="text" id="order_type" name="order_type" placeholder="" onblur="validate()" required autocomplete="off"> </div>
                     </div>
                     
-                    <div class="form-group col-sm-10 flex-column d-flex"> <label class="form-control-label px-3">Quantity <span class="text-danger"> *</span></label> <input type="text" id="email" name="quantity" placeholder="" onblur="validate(3)" required>
-                    <input type="hidden" id="total" name="total" placeholder="" required onblur="validate(1)"> 
+                    <div class="form-group col-sm-10 flex-column d-flex"> <label class="form-control-label px-3">Quantity <span class="text-danger"> *</span></label> <input type="text" id="quantity" name="quantity" placeholder="" onblur="validate(5)" required autocomplete="off">
+                    <input type="hidden" id="total" name="total" placeholder="" required onblur="validate(5)"> 
                 </div>
                     
                    
 
                     <div class="row justify-content-center">
-                        <div class="form-group col-sm-12"> <button name="submit" type="submit" class="btn-block btn-primary">Order</button> </div>
+                        <div class="form-group col-sm-12"> <button name="submit" type="submit" onclick="confirm()" class="btn-block btn-primary">Order</button> </div>
                     </div>
                 </form>
             </div>
@@ -83,9 +83,9 @@ if (isset($_POST['submit']))
 function validate(val) {
     v1 = document.getElementById("user_name");
     v2 = document.getElementById("order_id");
-    v3 = document.getElementById("price");
+    v3 = document.getElementById("pri");
     v4 = document.getElementById("order_type");
-    v5 = document.getElementById("stock");
+    v5 = document.getElementById("quantity");
     v6 = document.getElementById("");
 
     flag1 = true;

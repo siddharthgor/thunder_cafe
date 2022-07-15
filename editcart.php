@@ -13,7 +13,7 @@ if(isset($_POST['submit']))
 
 include "conn.php";
 
-
+$id = $_GET['id'];
 $user_id = $_POST['user_id'];
 $product_id =$_POST['product_id'];
 $quantity =$_POST['quantity']; 
@@ -66,6 +66,8 @@ $s = " SELECT * FROM  cart WHERE  id = '$id' " ;
                                               include "conn.php";
 
                                               $id = $_GET['id'];
+                                              
+                                              
                                               $sql = "SELECT * FROM cart WHERE id = '$id'  " ;
 
                                               $res = mysqli_query($conn,$sql);
@@ -83,7 +85,7 @@ $s = " SELECT * FROM  cart WHERE  id = '$id' " ;
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                            <input type="hidden" name="user_id"  id="name" class=" form-control" value= "<?php echo $row['user_id'] ?>"  autocomplete="off">
+                                            <input type="hidden" name="id"  id="name" class=" form-control" value= "<?php echo $row['id'] ?>"  autocomplete="off">
                                                 <input type="text" name="user_id"  id="name" class=" form-control" value= "<?php echo $row['user_id'] ?>"  autocomplete="off"> 
                                                 <label class="form-label" for="form3Example1c">Your Name</label>
                                             </div>
@@ -92,7 +94,7 @@ $s = " SELECT * FROM  cart WHERE  id = '$id' " ;
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                                <input type="text"  id="mobile_no" name="product_id" class="form-control" value="<?php echo $row['product_id'] ?>"  autocomplete="off" />
+                                                <input type="text"  id="product_id  " name="product_id" class="form-control" value="<?php echo $row['product_id'] ?>"  autocomplete="off" />
                                                 <label class="form-label" for="form3Example3c">Product</label>
                                             </div>
                                         </div>
@@ -101,7 +103,7 @@ $s = " SELECT * FROM  cart WHERE  id = '$id' " ;
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                                <input type="text" id="profile" name="profile" class="form-control"  value="<?php echo $row['quantity'] ?>"  autocomplete="off" >
+                                                <input type="text" id="quantity" name="quantity" class="form-control"  value="<?php echo $row['quantity'] ?>"  autocomplete="off" >
                                                 <label class="form-label" for="form3Example4cd">Quantity
 
                                                 </label>

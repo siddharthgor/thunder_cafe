@@ -7,6 +7,7 @@ include "header.php";
     <div classs = "container" >
             <div class="rows ">
                 <div class="col-md-8">
+                  <br>
                 
                 <?php 
                  include "conn.php";
@@ -46,6 +47,9 @@ include "header.php";
   </thead>
   <tbody>
   <h3 class="display-3">Total Orders</h3>
+
+
+
     <?php 
     while ($row = mysqli_fetch_assoc($res)) 
     {

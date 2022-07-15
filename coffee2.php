@@ -26,7 +26,7 @@ include "header.php";
   <div class="carousel-inner"> 
     <!-- Single item -->
     <div class="carousel-item active">
-      <video class="img-fluid" autoplay loop muted>
+      <video class="img-fluid" autoplay loop muted width="60%">
         <source src="images/video.mp4" type="video/mp4" />
       </video>
   
